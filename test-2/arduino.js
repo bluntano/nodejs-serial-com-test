@@ -8,9 +8,6 @@ const app = express();
 const router = express.Router();
 const path = require('path');
 
-// for editing index.html
-const Window = require('window');
-
 router.get('/', function(req, res) {
 	res.sendFile(path.join(__dirname + '/index.html'));
 });
